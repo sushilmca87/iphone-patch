@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AllowEDGEEditing</key>
+	<true/>
+	<key>BookmarkURLs</key>
+	<array>
+		<dict>
+			<key>BookmarkName</key>
+			<string>Vivatel</string>
+			<key>BookmarkURL</key>
+			<string>http://www.vivatel.bg/</string>
+		</dict>
+	</array>
+	<key>CarrierName</key>
+	<string>Vivatel</string>
+	<key>IntlDataRoamingSwitch</key>
+	<true/>
+	<key>Services</key>
+	<array>
+		<dict>
+			<key>ServiceCode</key>
+			<string>123</string>
+			<key>ServiceName</key>
+			<string>Self Service</string>
+		</dict>
+		<dict>
+			<key>ServiceCode</key>
+			<string>110</string>
+			<key>ServiceName</key>
+			<string>Voicemail</string>
+		</dict>
+	</array>
+	<key>ShowCallForwarded</key>
+	<true/>
+	<key>ShowCallForwarding</key>
+	<false/>
+	<key>ShowDialAssist</key>
+	<false/>
+	<key>ShowTTY</key>
+	<false/>
+	<key>SupportedSIMs</key>
+	<array>
+		<string>28403</string>
+	</array>
+	<key>SupportsUserBusyCauseCode</key>
+	<true/>
+	<key>VisualVoicemailServiceName</key>
+	<string>none</string>
+	<key>VoicemailPilotNumber</key>
+	<string>110</string>
+	<key>apns</key>
+	<array>
+		<dict>
+			<key>apn</key>
+			<string>internet.vivatel.bg</string>
+			<key>password</key>
+			<string>vivatel</string>
+			<key>username</key>
+			<string>vivatel</string>
+		</dict>
+		<dict>
+			<key>apn</key>
+			<string></string>
+			<key>password</key>
+			<string></string>
+			<key>username</key>
+			<string></string>
+		</dict>
+	</array>
+</dict>
+</plist>
