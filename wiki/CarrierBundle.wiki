@@ -1,4 +1,4 @@
-#summary Description of the CarrierBundle
+#summary Description of the CarrierBundle format
 
 = Introduction =
 
