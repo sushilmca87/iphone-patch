@@ -129,6 +129,37 @@
 			<integer>6</integer>
 		</array>
 	</array>
+	<key>bg</key>
+	<array>
+		<array>
+			<string>359</string>
+			<string>00</string>
+			<string>0</string>
+			<integer>1</integer>
+			<integer>7</integer>
+		</array>
+		<array>
+			<string>359</string>
+			<string>00</string>
+			<string>0</string>
+			<integer>2</integer>
+			<integer>7</integer>
+		</array>
+		<array>
+			<string>359</string>
+			<string>00</string>
+			<string>0</string>
+			<integer>1</integer>
+			<integer>6</integer>
+		</array>
+		<array>
+			<string>359</string>
+			<string>00</string>
+			<string>0</string>
+			<integer>2</integer>
+			<integer>6</integer>
+		</array>
+	</array>
 	<key>br</key>
 	<array>
 		<array>
