@@ -29,6 +29,67 @@
 		<string>+32 ########</string>
 		<string>00 $</string>
 	</array>
+	<key>bg</key>
+	<array>
+		<string>+359 2 ###-####</string>
+		<string>+359 32 ###-####</string>
+		<string>+359 34 ###-####</string>
+		<string>+359 38 ###-####</string>
+		<string>+359 42 ###-####</string>
+		<string>+359 44 ###-####</string>
+		<string>+359 46 ###-####</string>
+		<string>+359 52 ###-####</string>
+		<string>+359 54 ###-####</string>
+		<string>+359 52 ###-####</string>
+		<string>+359 56 ###-####</string>
+		<string>+359 58 ###-####</string>
+		<string>+359 62 ###-####</string>
+		<string>+359 64 ###-####</string>
+		<string>+359 68 ###-####</string>
+		<string>+359 73 ###-####</string>
+		<string>+359 78 ###-####</string>
+		<string>+359 82 ###-####</string>
+		<string>+359 84 ###-####</string>
+		<string>+359 86 ###-####</string>
+		<string>+359 87 ###-####</string>
+		<string>+359 88 ###-####</string>
+		<string>+359 89 ###-####</string>
+		<string>+359 92 ###-####</string>
+		<string>+359 82 ###-####</string>
+		<string>+359 94 ###-####</string>
+		<string>+359 96 ###-####</string>
+		<string>+359 ### ###-####</string>
+		<string>(02) ###-####</string>
+		<string>(032) ###-####</string>
+		<string>(034) ###-####</string>
+		<string>(038) ###-####</string>
+		<string>(042) ###-####</string>
+		<string>(044) ###-####</string>
+		<string>(046) ###-####</string>
+		<string>(052) ###-####</string>
+		<string>(054) ###-####</string>
+		<string>(052) ###-####</string>
+		<string>(056) ###-####</string>
+		<string>(058) ###-####</string>
+		<string>(062) ###-####</string>
+		<string>(064) ###-####</string>
+		<string>(068) ###-####</string>
+		<string>(073) ###-####</string>
+		<string>(078) ###-####</string>
+		<string>(082) ###-####</string>
+		<string>(084) ###-####</string>
+		<string>(086) ###-####</string>
+		<string>(087) ###-####</string>
+		<string>(088) ###-####</string>
+		<string>(089) ###-####</string>
+		<string>(092) ###-####</string>
+		<string>(082) ###-####</string>
+		<string>(094) ###-####</string>
+		<string>(096) ###-####</string>
+		<string>(0###) ###-###</string>
+		<string>#######</string>
+		<string>00 $</string>
+	</array>
 	<key>br</key>
 	<array>
 		<string>(0##) #######</string>
