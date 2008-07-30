@@ -1,0 +1,43 @@
+#summary Bulgarian Phonetic Keyboard homepage (com.mspasov.bgkeyboard)
+#labels Featured
+
+= Introduction =
+
+http://iphone-patch.googlecode.com/files/bgkeyboard-0.1-1.jpg
+
+*Bulgarian Phonetic Keyboard* for FW 2.0 is a hack against the !TextInput_ru bundle with the popular Bulgarian Phonetic Layout. Please remember that this is work in progress and some features might not work as expected. Reporting bugs/ideas is welcome.
+
+= Features = 
+  * Phonetic Layout 
+  * Light horizontal and vertical keyboards
+
+= TODO = 
+  * Modify dark keyboard images.
+  * BDS Layout.
+  * Bulgarian auto-correction dictionary.
+
+= Changes = 
+
+*0.1* - Initial version. Horizontal and vertical light keyboards are working, installs and uninstalls fine.
+
+= Download and Installation = 
+
+You can download the last version from the Downloads section. Copy to your phone and execute `dpkg -i <downloaded_file.deb>` as root. Soon package will be available in one of the official Cydia repositories.
+
+= Details = 
+
+The package itself replaces the !TextInput_ru.bundle with modified files. Here are the steps that I used, developing the package:
+
+  * Used IDA to disassemble the binary.
+  * After some looking found `\0\0` terminated 4 byte unicode characters.
+  * I have mapped the positions and did some hex editing
+  * Found out that artwork should be edited. No utility supporting !Text_Bundle_ru was available, so hunt for offsets and sizes began..
+  * Modified one .py script to extract and assemble the artwork.
+  * Edited the keyboard images with Gimp:
+    * Removing the letters from the background.
+    * Creating layouts for Russian and BG Phonetic keyboard (I'll publish XCF files soon).
+  * Assembled the modified .artwork
+  * Resigned the modified binary
+  * Created the debian package.
+
+All this was done in two days.
