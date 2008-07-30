@@ -24,6 +24,10 @@ http://iphone-patch.googlecode.com/files/bgkeyboard-0.1-1.jpg
 
 You can download the last version from the Downloads section. Copy to your phone and execute `dpkg -i <downloaded_file.deb>` as root. Soon package will be available in one of the official Cydia repositories.
 
+= Donations =
+
+If you like the work done here, please check the [Donations] page. Thank you!
+
 = Details = 
 
 The package itself replaces the !TextInput_ru.bundle with modified files. Here are the steps that I used, developing the package:
