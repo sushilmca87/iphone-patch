@@ -1,4 +1,5 @@
 #summary How and why to donate
+#labels Featured
 
 = Why to donate? =
 
@@ -13,6 +14,6 @@ Donations are welcome in the following way:
 
 If you like the work done here and are unable to donate time or knowledge (or want to do more), donate to *[http://www.save-darina.org/ Save Darina]* project or any other project fighting with cancer, AIDS, deceases or poverty. Since I'm from Bulgaria - projects which address local problems are preferred. You could also donate money to FSF (Free Software Foundation) [https://www.fsf.org/associate/support_freedom/donate/index_html here]. I'm supporter and user of free software and by donating to FSF you help me too.
 
-If you would like to personally support me - buy me a beer or help me cover my electricity bills using the !PayPal or ePay links on the right menu. Every cent will be greatly appreciated.
+If you would like to personally support me - buy me a beer or help me cover my electricity bills using the [https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=mspasov%40gmail%2ecom&item_name=iPhone%20Patch%20Donation&no_shipping=1&cn=Have%20something%20to%20share%3f&tax=0&currency_code=EUR&lc=BG&bn=PP%2dDonationsBF&charset=UTF%2d8 PayPal] or [https://www.epay.bg/?PAGE=paylogin&MIN=1152538290&TOTAL=2.00&DESCR=%C4%E0%F0%E5%ED%E8%E5%20%E7%E0%20iPhone%2Dpatch&URL_OK=http%3A%2F%2Fcode%2Egoogle%2Ecom%2Fp%2Fiphone%2Dpatch&URL_CANCEL=http%3A%2F%2Fcode%2Egoogle%2Ecom%2Fp%2Fiphone%2Dpatch ePay]. Every cent will be greatly appreciated.
 
 *Thank you!*
