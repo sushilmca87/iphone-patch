@@ -22,8 +22,10 @@ http://iphone-patch.googlecode.com/files/bgkeyboard-0.1-1.jpg
 
 = Download and Installation = 
 
-You can download the last version from the Downloads section. Copy to your phone and execute `dpkg -i <downloaded_file.deb>` as root. Soon package will be available in one of the official Cydia repositories.
-
+You can download the last version from the Downloads section or use the following repository: 
+{{{
+deb http://mspasov.com/ stable main  
+}}}
 = Donations =
 
 If you like the work done here, please check the [Donations] page. Thank you!
