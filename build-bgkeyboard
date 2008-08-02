@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/bin/bash -e
+if [ ! -d /tmp/build ] ; then mkdir /tmp/build; fi
 svn export bgkeyboard /tmp/build/bgkeyboard
 cd /tmp/build
 plutil -cbinary1 bgkeyboard/System/Library/Frameworks/UIKit.framework/Keyboard-ru.plist
