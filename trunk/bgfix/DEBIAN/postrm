@@ -1,0 +1,23 @@
+#!/bin/bash
+
+case $1 in remove)
+
+if [ -f /System/Library/Frameworks/UIKit.framework/PhoneFormats/UIPhoneFormats.plist.bgfix.bac ]; then 
+    echo "Restoring original UIPhoneFormats.plist"
+    mv /System/Library/Frameworks/UIKit.framework/PhoneFormats/UIPhoneFormats.plist.bgfix.bac /System/Library/Frameworks/UIKit.framework/PhoneFormats/UIPhoneFormats.plist
+else
+    echo "WARNING! Unable to restore /System/Library/Frameworks/UIKit.framework/PhoneFormats/UIPhoneFormats.plist from backup. Please investigate!"
+fi
+
+if [ -f /System/Library/PrivateFrameworks/AppSupport.framework/PhoneNumberTemplates.plist.bgfix.bac ]; then 
+    echo "Restoring original PhoneNumberTemplates.plist.bgfix.bac"
+    mv /System/Library/PrivateFrameworks/AppSupport.framework/PhoneNumberTemplates.plist.bgfix.bac /System/Library/PrivateFrameworks/AppSupport.framework/PhoneNumberTemplates.plist
+else
+    echo "WARNING! Unable to restore PhoneNumberTemplates.plist from backup. Please investigate!"
+fi
+
+;;
+
+*)
+
+esac

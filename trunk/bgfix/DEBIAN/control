@@ -1,0 +1,17 @@
+Package: com.mspasov.bgfix
+Name: BG Fix
+Version: 0.1-1
+Architecture: iphoneos-arm
+Description: Bulgarian Fix
+ Fixes phone number lookups (+359 XX == 0XX).
+ All Bulgarian one and two digit area codes are recognised.
+ Beautifies phone numbers:
+ +359 88 XXX-XXXX; +359 2 XXX-XXXX;
+ (088) XXX-XXXX; (02) XXX-XXXX;
+ Please note that this is beta software and there are no guarantees.
+Homepage: http://code.google.com/p/iphone-patch/
+Maintainer: Martin Spasov <mspasov@gmail.com>
+Author: Martin Spasov <mspasov@gmail.com>
+Section: Localization
+
+

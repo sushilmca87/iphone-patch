@@ -1,0 +1,25 @@
+#!/bin/bash
+
+case $1 in install)
+
+if [ ! -f /System/Library/Frameworks/UIKit.framework/PhoneFormats/UIPhoneFormats.plist.bgfix.bac ]; then 
+    echo "Backing up UIPhoneFormats.plist to UIPhoneFormats.plist.bgfix.bac"
+    mv /System/Library/Frameworks/UIKit.framework/PhoneFormats/UIPhoneFormats.plist /System/Library/Frameworks/UIKit.framework/PhoneFormats/UIPhoneFormats.plist.bgfix.bac
+else
+    echo "WARNING! Early version of /System/Library/Frameworks/UIKit.framework/PhoneFormats/UIPhoneFormats.plist.bgfix.bac We will not create backup now and we will restore this file when package is removed!"
+fi
+
+if [ ! -f /System/Library/PrivateFrameworks/AppSupport.framework/PhoneNumberTemplates.plist.bgfix.bac ]; then
+    echo "Backing up PhoneNumberTemplates.plist to PhoneNumberTemplates.plist.bgfix.bac"
+    mv /System/Library/PrivateFrameworks/AppSupport.framework/PhoneNumberTemplates.plist /System/Library/PrivateFrameworks/AppSupport.framework/PhoneNumberTemplates.plist.bgfix.bac
+else
+    echo "WARNING! Early version of /System/Library/PrivateFrameworks/AppSupport.framework/PhoneNumberTemplates.plist.bgfix.bac detected. We will not create backup now and we will restore the content of this directory when package is removed!"
+fi
+
+echo "Do not delete backups, they will be restored upon package removal!"
+
+;;
+
+*)
+
+esac
