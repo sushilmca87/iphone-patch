@@ -22,10 +22,11 @@ http://iphone-patch.googlecode.com/files/bgkeyboard-0.1-1.jpg
 
 = Download and Installation = 
 
-You can download the last version from the Downloads section or use the following repository: 
-{{{
-deb http://mspasov.com/ stable main  
-}}}
+You can install the package in the following ways:
+  * Install *"iPhone Patch's Source"* From *"Repositories"* section in Cydia (recommended).
+  * Add `deb http://mspasov.com/ stable main` to your `sources.list` file.
+  * Download the last version from the Downloads tab and install it by hand.
+
 = Donations =
 
 If you like the work done here, please check the [Donations] page. Thank you!
