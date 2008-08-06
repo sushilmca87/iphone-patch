@@ -4,6 +4,7 @@ svn export bgfix /tmp/build/bgfix
 cd /tmp/build
 find bgfix -type f -name "*.plist" -exec plutil -cbinary1 {} \;
 dpkg-deb -b bgfix
-mv bgfix.deb `dpkg-deb -f bgfix.deb Package`-`dpkg-deb -f bgfix.deb Version`.deb
+rm -r /tmp/build/bgfix
+dpkg-name -a bgfix.deb
 
 

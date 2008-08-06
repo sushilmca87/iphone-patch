@@ -4,6 +4,8 @@ svn export bgkeyboard /tmp/build/bgkeyboard
 cd /tmp/build
 plutil -cbinary1 bgkeyboard/System/Library/Frameworks/UIKit.framework/Keyboard-ru.plist
 dpkg-deb -b bgkeyboard
-mv bgkeyboard.deb `dpkg-deb -f bgkeyboard.deb Package`-`dpkg-deb -f bgkeyboard.deb Version`.deb
+rm -r /tmp/build/bgkeyboard
+dpkg-name -a bgkeyboard.deb
+
 
 
