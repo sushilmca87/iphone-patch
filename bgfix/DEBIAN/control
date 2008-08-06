@@ -1,6 +1,6 @@
 Package: com.mspasov.bgfix
 Name: BG Fix
-Version: 0.1-2
+Version: 0.1-3
 Architecture: iphoneos-arm
 Description: Bulgarian Fix
  Fixes phone number lookups (+359 XX == 0XX).
@@ -11,7 +11,7 @@ Description: Bulgarian Fix
  Do not install this package on firmware 2.0.1!
  Please note that this is beta software and there are no guarantees.
 Homepage: http://code.google.com/p/iphone-patch/
-Pre-Depends: firmware (= 2.0)
+Depends: firmware (= 2.0)
 Maintainer: Martin Spasov <mspasov@gmail.com>
 Author: Martin Spasov <mspasov@gmail.com>
 Section: Localization
