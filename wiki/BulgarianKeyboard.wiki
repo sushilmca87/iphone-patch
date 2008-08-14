@@ -17,8 +17,8 @@ http://iphone-patch.googlecode.com/files/bgkeyboard-0.1-1.jpg
 
 = Changes = 
 
-*0.2* - Transparent images fixed.
-*0.1* - Initial version. Horizontal and vertical light keyboards are working, installs and uninstalls fine.
+  * *0.2* - Transparent images fixed.
+  * *0.1* - Initial version. Horizontal and vertical light keyboards are working, installs and uninstalls fine.
 
 = Download and Installation = 
 
