@@ -1,11 +1,10 @@
 Package: com.mspasov.bgkeyboard
 Name: BG Phonetic Keyboard
-Version: 0.2-1
+Version: 0.3-1
 Architecture: iphoneos-arm
 Description: Bulgarian Phonetic Keyboard
  To use - add Russian keyboard from Settings->General->Keyboard.
- Do not install this package on firmware 2.0.1!
- Changes: Updated .artwork file.
+ Should work fine with FW 2.0.1
  Please note that this is beta software and there are no guarantees.
 Homepage: http://code.google.com/p/iphone-patch/wiki/BulgarianKeyboard
 Maintainer: Martin Spasov <mspasov@gmail.com>
