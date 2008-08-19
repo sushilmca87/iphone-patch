@@ -1,4 +1,4 @@
-#summary eBay Patcher homepage (com.mspasov.ebaypatcher
+#summary eBay Patcher homepage (com.mspasov.ebaypatcher)
 #labels Featured
 
 = Introduction =
