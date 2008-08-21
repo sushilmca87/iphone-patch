@@ -16,7 +16,7 @@ http://iphone-patch.googlecode.com/files/bgkeyboard-0.1-1.jpg
   * Bulgarian auto-correction dictionary.
 
 = Changes = 
-  
+  * *1.0* - Seems stable, no bugs reported, should work with 2.0.2
   * *0.3* - Almost nothing new, works with 2.0.1
   * *0.2* - Transparent images fixed.
   * *0.1* - Initial version. Horizontal and vertical light keyboards are working, installs and uninstalls fine.
