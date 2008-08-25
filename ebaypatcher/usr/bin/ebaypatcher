@@ -61,18 +61,16 @@ setstrvalue() {
     plutil -s ${1} -v ${2} "${3}" > /dev/null 2>&1
 }
 
-date
-
 case "$1" in
     get)
 	EBAYDIR=$(findebaydir)
 	echo "SiteID is $(getvalue siteID "${EBAYDIR}/appdefaults.plist")"
 	;;
     set)
+	echo "setting SiteID to $2"
 	EBAYDIR=$(findebaydir)
 	setintvalue siteID $2 "${EBAYDIR}/appdefaults.plist"
 	setstrvalue shoppingAPI "http://open.api.ebay.com/shopping?siteid=${2}" "${EBAYDIR}/appdefaults.plist"
-	echo "AAAAAAAAAAAAAAAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa${2}"
 	;;
     check)
 	EBAYDIR=$(findebaydir)

@@ -3,7 +3,7 @@ if [ ! -d /tmp/build ] ; then mkdir /tmp/build; fi
 svn export ebaypatcher /tmp/build/ebaypatcher
 cd /tmp/build
 dpkg-deb -b ebaypatcher
-rm -r /tmp/build/bgfix
+rm -r /tmp/build/ebaypatcher
 dpkg-name -a ebaypatcher.deb
 
 
