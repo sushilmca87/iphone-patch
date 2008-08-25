@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "Patching eBay.app to use ebay.co.uk site."
+/usr/bin/ebaypatcher set 3
+echo "If you wish to use other site versions, find your siteID by launching \"ebaypatcher list\" and then set it by running \"ebaypatcher set <ID>\""
