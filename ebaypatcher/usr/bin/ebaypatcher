@@ -28,8 +28,28 @@ usage() {
 list() {
     echo "Available siteIDs for eBay:"
     echo " 0 - US (Default)"
-    echo " 1 - Canada"
-    echo " 2 - UK"
+    echo " 2 - Canada"
+    echo " 3 - UK"
+    echo " 15 - AU"
+    echo " 16 - AT"
+    echo " 23 - BE (French)"
+    echo " 71 - FR"
+    echo " 77 - DE"
+    echo " 100 - Motors (US)"
+    echo " 101 - IT"
+    echo " 123 - BE (Dutch)"
+    echo " 146 - NL"
+    echo " 186 - ES"
+    echo " 193 - CH"
+    echo " 201 - HK"
+    echo " 203 - IN"
+    echo " 205 - IE"
+    echo " 207 - MY"
+    echo " 210 - Canada (French)"
+    echo " 211 - PH"
+    echo " 212 - Poland"
+    echo " 216 - SG"
+    
 }
 
 findebaydir() {

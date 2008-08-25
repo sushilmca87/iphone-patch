@@ -1,11 +1,11 @@
 Package: com.mspasov.ebaypatcher
 Name: eBay Patcher
-Version: 0.1-1
+Version: 0.1-3
 Architecture: iphoneos-arm
 Depiction: http://mspasov.com/iphone/applications/ebaypatcher-depiction.html
 Description: Patches eBay to use international (non us) sites. You will need to install the US eBay application before
  applying this patch. After installation eBay app will search in the .co.uk version of the site.
- You can manualy change the siteID in use from cli (MobileTerminal or SSH).
+ You can manualy change the siteID in use from cli (MobileTerminal or SSH). Report bugs on the project site.
 Pre-Depends: sed, com.ericasadun.utilities
 Homepage: http://mspasov.com/iphone/applications/ebaypatcher.html
 Maintainer: Martin Spasov <mspasov@gmail.com>
