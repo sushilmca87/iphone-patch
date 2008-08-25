@@ -1,0 +1,92 @@
+#!/bin/bash
+#
+# Copyright 2008 Martin Spasov
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along
+# with this program; if not, write to the Free Software Foundation, Inc.,
+# 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+
+usage() {
+    echo "Usage: ${0} <get|set ID|check ID|list>"
+    echo "  get - returns current siteId"
+    echo "  set ID - sets siteId to id"
+    echo "  check ID - compares current siteId with ID, returns 0 when equal (for use with BossPrefs"
+    echo "  list - lists all documented siteIds"
+}
+
+list() {
+    echo "Available siteIDs for eBay:"
+    echo " 0 - US (Default)"
+    echo " 1 - Canada"
+    echo " 2 - UK"
+}
+
+findebaydir() {
+    local PLDIR=`find ~mobile/Applications/ -type d -name "eBay.app"`
+    
+#    echo ${PLDIR}
+    if [ ! -z "${PLDIR}" ]; then echo ${PLDIR}; else
+	echo "Error: Cannot find eBay.app. Make sure it's installed!"
+	exit -1
+    fi
+}
+
+getvalue() {
+    local VAL=`plutil -v ${1} ${2} 2>&1 | sed s/.*plutil\\\[.*\\\]\ //`
+    if [ "${VAL}" = "Key ${1} not found" ]
+    then
+	return -1
+    else 
+	echo ${VAL}
+    fi
+    
+}
+
+setintvalue() {
+    plutil -i ${1} -v ${2} "${3}" > /dev/null 2>&1
+}
+
+setstrvalue() {
+    plutil -s ${1} -v ${2} "${3}" > /dev/null 2>&1
+}
+
+date
+
+case "$1" in
+    get)
+	EBAYDIR=$(findebaydir)
+	echo "SiteID is $(getvalue siteID "${EBAYDIR}/appdefaults.plist")"
+	;;
+    set)
+	EBAYDIR=$(findebaydir)
+	setintvalue siteID $2 "${EBAYDIR}/appdefaults.plist"
+	setstrvalue shoppingAPI "http://open.api.ebay.com/shopping?siteid=${2}" "${EBAYDIR}/appdefaults.plist"
+	echo "AAAAAAAAAAAAAAAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa${2}"
+	;;
+    check)
+	EBAYDIR=$(findebaydir)
+	if [ $(getvalue siteID "${EBAYDIR}/appdefaults.plist") = $2 ]
+	then
+	    exit 1
+	else
+	    exit 0
+	fi
+	;;
+    list)
+	list
+	;;
+    *)
+	usage
+	;;
+esac
