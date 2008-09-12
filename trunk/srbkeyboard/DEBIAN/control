@@ -1,0 +1,18 @@
+Package: com.mspasov.srbkeyboard
+Name: Serbian Cyrillic Keyboard
+Version: 0.1-1
+Architecture: iphoneos-arm
+Depiction: http://mspasov.com/iphone/applications/srbkeyboard-depiction.html
+Description: Serbian Cyrillic Keyboard for iPhone FW 2.0
+ for iPhone FW 2.0 package contains a modified version of the russian keyboard with Serbian Cyrillic layout.
+ Toma Tasovac did the hard work - artwork editing and layout.
+ Package is well tested and works on FW 2.0, 2.0.1 and 2.0.2.
+ Please report bugs and feature requests on the project page. Package sources and method used are available there too.
+ After installation enable Russian Keyboard from Settings -> General -> Keyboard and respring.
+Conflicts: com.mspasov.bgkeyboard
+Homepage: http://mspasov.com/iphone/applications/srbkeyboard.html
+Maintainer: Martin Spasov <mspasov@gmail.com>
+Author: Martin Spasov <mspasov@gmail.com>
+Section: Localization
+
+
