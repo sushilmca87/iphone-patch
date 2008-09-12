@@ -2,7 +2,7 @@
 if [ ! -d /tmp/build ] ; then mkdir /tmp/build; fi
 svn export srbkeyboard /tmp/build/srbkeyboard
 cd /tmp/build
-plutil -cbinary1 bgkeyboard/System/Library/Frameworks/UIKit.framework/Keyboard-ru.plist
+plutil -cbinary1 srbkeyboard/System/Library/Frameworks/UIKit.framework/Keyboard-ru.plist
 dpkg-deb -b srbkeyboard
 rm -r /tmp/build/srbkeyboard
 dpkg-name -a srbkeyboard.deb
