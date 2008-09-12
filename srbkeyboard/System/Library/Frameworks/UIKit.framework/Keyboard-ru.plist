@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UI-LanguageIndicator</key>
+	<string>Serbian (CYR)</string>
+	<key>UI-TopLevelDomain</key>
+	<dict>
+		<key>Keycaps</key>
+		<array>
+			<string>.edu</string>
+			<string>.org</string>
+			<string>.rs</string>
+			<string>.com</string>
+		</array>
+		<key>Popup</key>
+		<string>left</string>
+		<key>Strings</key>
+		<array>
+			<string>.edu</string>
+			<string>.org</string>
+			<string>.rs</string>
+			<string>.com</string>
+		</array>
+	</dict>
+</dict>
+</plist>

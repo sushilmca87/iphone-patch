@@ -1,0 +1,23 @@
+#!/bin/bash
+
+case $1 in remove)
+
+if [ -f /System/Library/Frameworks/UIKit.framework/Keyboard-ru.plist.srbkeyboard.bac ]; then 
+    echo "Restoring original Keyboard-ru.plist"
+    mv /System/Library/Frameworks/UIKit.framework/Keyboard-ru.plist.srbkeyboard.bac /System/Library/Frameworks/UIKit.framework/Keyboard-ru.plist
+else
+    echo "WARNING! Unable to restore /System/Library/Frameworks/UIKit.framework/Keyboard-ru.plist from backup. Please investigate!"
+fi
+
+if [ -d /System/Library/TextInput/TextInput_ru.bundle.srbkeyboard.bac ]; then
+    echo "Restoring original TextInput_ru.bundle"
+    mv /System/Library/TextInput/TextInput_ru.bundle.srbkeyboard.bac /System/Library/TextInput/TextInput_ru.bundle
+else 
+    echo "WARNING! Unable to restore /System/Library/TextInput/TextInput_ru.bundle from backup. Please investigate!"
+fi
+
+;;
+
+*)
+
+esac
