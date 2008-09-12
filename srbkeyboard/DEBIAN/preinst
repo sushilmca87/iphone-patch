@@ -2,18 +2,18 @@
 
 case $1 in install)
 
-if [ ! -f /System/Library/Frameworks/UIKit.framework/Keyboard-ru.plist.bgkeyboard.bac ]; then 
-    echo "Backing up Keyboard-ru.plist to Keyboard-ru.plist.bgkeyboard.bac"
-    mv /System/Library/Frameworks/UIKit.framework/Keyboard-ru.plist /System/Library/Frameworks/UIKit.framework/Keyboard-ru.plist.bgkeyboard.bac
+if [ ! -f /System/Library/Frameworks/UIKit.framework/Keyboard-ru.plist.srbkeyboard.bac ]; then 
+    echo "Backing up Keyboard-ru.plist to Keyboard-ru.plist.srbkeyboard.bac"
+    mv /System/Library/Frameworks/UIKit.framework/Keyboard-ru.plist /System/Library/Frameworks/UIKit.framework/Keyboard-ru.plist.srbkeyboard.bac
 else
-    echo "WARNING! Early version of /System/Library/Frameworks/UIKit.framework/Keyboard-ru.plist.bgkeyboard.bac detected. We will not create backup now and we will restore this file when package is removed!"
+    echo "WARNING! Early version of /System/Library/Frameworks/UIKit.framework/Keyboard-ru.plist.srbkeyboard.bac detected. We will not create backup now and we will restore this file when package is removed!"
 fi
 
-if [ ! -d /System/Library/TextInput/TextInput_ru.bundle.bgkeyboard.bac ]; then
-    echo "Backing up TextInput_ru.bundle to TextInput_ru.bundle.bgkeyboard.bac"
-    mv /System/Library/TextInput/TextInput_ru.bundle /System/Library/TextInput/TextInput_ru.bundle.bgkeyboard.bac
+if [ ! -d /System/Library/TextInput/TextInput_ru.bundle.srbkeyboard.bac ]; then
+    echo "Backing up TextInput_ru.bundle to TextInput_ru.bundle.srbkeyboard.bac"
+    mv /System/Library/TextInput/TextInput_ru.bundle /System/Library/TextInput/TextInput_ru.bundle.srbkeyboard.bac
 else
-    echo "WARNING! Early version of /System/Library/TextInput/TextInput_ru.bundle.bgkeyboard.bac detected. We will not create backup now and we will restore the content of this directory when package is removed!"
+    echo "WARNING! Early version of /System/Library/TextInput/TextInput_ru.bundle.srbkeyboard.bac detected. We will not create backup now and we will restore the content of this directory when package is removed!"
 fi
 
 echo "Do not delete backups, they will be restored upon package removal!"
