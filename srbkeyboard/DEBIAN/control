@@ -11,7 +11,7 @@ Description: Serbian Cyrillic Keyboard for iPhone FW 2.0
  After installation enable Russian Keyboard from Settings -> General -> Keyboard and respring.
 Homepage: http://mspasov.com/iphone/applications/srbkeyboard.html
 Pre-Depends: firmware (>= 2.0)
-Conflicts: textinput_ru_mod | firmware (<< 2.1)
+Conflicts: textinput_ru_mod, firmware (<< 2.1)
 Provides: textinput_ru_mod
 Maintainer: Martin Spasov <mspasov@gmail.com>
 Author: Martin Spasov <mspasov@gmail.com>
